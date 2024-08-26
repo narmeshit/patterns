@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
+import 'screen.dart';
+import 'task_notifier.dart';
 
 void main() {
   runApp(const MainApp());
@@ -9,11 +13,11 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Estás en la Rama Main, cambiate a las otras ramas usando Git'),
-        ),
+    return ChangeNotifierProvider(
+      create: (context) => TaskNotifier(),
+      child: const MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: TaskScreen(),
       ),
     );
   }
