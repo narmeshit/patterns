@@ -1,4 +1,4 @@
-# Patron BLoC (Business Logic Component)
+# Patrones de diseño - Patterns
 
 Los patrones de diseño son soluciones probadas y reutilizables para problemas comunes en el diseño de software. En Flutter, estos patrones se pueden aplicar para estructurar y organizar el código de manera más eficiente y mantenible.
 
